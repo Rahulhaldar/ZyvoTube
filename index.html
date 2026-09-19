@@ -1,160 +1,106 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#ffffff">
-<title>ZyvoTube — Watch. Explore. Vibe.</title>
-<meta name="description" content="ZyvoTube is a modern Android video experience for discovery, Shorts, smooth playback and supported downloads.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZyvoTube — Watch. Explore. Zyvo.</title>
+<meta name="description" content="ZyvoTube — a modern video experience for watching, exploring and vibing. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--red:#e50914;--red2:#ff3b45;--ink:#15171b;--muted:#69707c;--soft:#f6f7f9;--line:#e8eaee;--white:#fff;--max:1180px;--shadow:0 22px 70px rgba(20,25,35,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;height:auto}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
-body:before{content:"";position:fixed;inset:0 auto auto 0;width:100%;height:650px;background:radial-gradient(circle at 76% 20%,rgba(229,9,20,.08),transparent 34%),radial-gradient(circle at 25% 0%,rgba(0,0,0,.035),transparent 28%);pointer-events:none;z-index:-1}
-.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:21px;letter-spacing:-.7px}.logo{width:40px;height:40px;border-radius:12px;background:var(--red);display:grid;place-items:center;box-shadow:0 10px 30px rgba(229,9,20,.22)}.waves{width:21px}.waves i{display:block;height:3px;background:#fff;border-radius:9px;margin:3px 0;transform:skewY(-8deg)}.navlinks{display:flex;align-items:center;gap:24px;color:#626975;font-size:12px;font-weight:750}.navlinks a:hover{color:var(--red)}.navcta{background:var(--ink);color:#fff!important;padding:10px 15px;border-radius:10px}
-.hero{min-height:650px;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:60px;padding:65px 0 95px}.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #f0cdd0;background:#fff7f7;color:#c40a13;border-radius:999px;padding:7px 11px;font-size:10px;font-weight:850}.pill b{width:6px;height:6px;background:var(--red);border-radius:50%}.hero h1{font-size:clamp(58px,8vw,96px);line-height:.92;letter-spacing:-6px;margin:20px 0 24px}.hero h1 span{color:var(--red)}.hero p{max-width:590px;color:var(--muted);font-size:17px;line-height:1.75;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);padding:13px 17px;border-radius:11px;font-size:12px;font-weight:850;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(20,25,35,.10)}.primary{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 12px 30px rgba(229,9,20,.20)}.dark{background:var(--ink);border-color:var(--ink);color:#fff}.ghost{background:#fff}.meta{color:#8a9099;font-size:11px;margin-top:15px}
-.showcase{height:570px;position:relative;display:grid;place-items:center}.glow{position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(229,9,20,.15);filter:blur(75px)}.device{position:absolute;width:265px;padding:7px;border-radius:31px;background:#111317;border:2px solid #111317;box-shadow:0 30px 75px rgba(0,0,0,.24),0 0 0 1px rgba(255,255,255,.10);transition:.45s}.device img{display:block;width:100%;border-radius:25px}.device.a{transform:translateX(-125px) rotate(-9deg) scale(.83);opacity:.7}.device.b{transform:translateX(125px) rotate(9deg) scale(.83);opacity:.7}.device.c{z-index:2}.showcase:hover .device.a{transform:translateX(-145px) rotate(-11deg) scale(.84)}.showcase:hover .device.b{transform:translateX(145px) rotate(11deg) scale(.84)}.showcase:hover .device.c{transform:translateY(-8px)}
-.section{padding:92px 0}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--red);font-weight:900}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.head h2{font-size:40px;letter-spacing:-2.5px;line-height:1.05;margin:7px 0 0}.head p{max-width:520px;color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;min-height:175px;box-shadow:0 8px 30px rgba(20,25,35,.035)}.card:hover{border-color:#d9dce2;transform:translateY(-2px);transition:.2s}.num{color:#a0a6af;font-size:10px;font-weight:900}.card h3{font-size:16px;margin:28px 0 7px}.card p{color:var(--muted);font-size:12px;line-height:1.65;margin:0}
-.band{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.experience{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}.screen{padding:8px;border-radius:28px;background:#fff;border:1px solid #dfe2e7;box-shadow:var(--shadow)}.screen img{width:100%;display:block;border-radius:22px}.points{margin-top:22px;border-top:1px solid #dfe2e7}.point{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid #dfe2e7}.point b{font-size:10px;color:var(--red)}.point h3{font-size:13px;margin:0 0 4px}.point p{font-size:11px;color:var(--muted);margin:0}
-.split{display:grid;grid-template-columns:300px 1fr;gap:70px;align-items:center}.short{aspect-ratio:9/16;contain:layout paint;border-radius:28px;background:linear-gradient(155deg,#262a31,#b31b25);position:relative;overflow:hidden;border:1px solid #d8dbe0;box-shadow:var(--shadow)}.short:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0004 0%,transparent 35%,#000b 100%)}.shortTop,.shortInfo,.rail{position:absolute;z-index:2}.shortTop{top:16px;left:17px;right:17px;display:flex;justify-content:space-between;color:#fff;font-size:10px;font-weight:800}.rail{right:12px;bottom:105px;display:grid;gap:9px}.rail i{font-style:normal;width:38px;height:38px;border:1px solid #ffffff22;border-radius:50%;background:#ffffff18;color:#fff;display:grid;place-items:center;font-size:11px;backdrop-filter:blur(8px)}.shortInfo{left:17px;right:50px;bottom:22px;color:#fff}.shortInfo b{font-size:11px}.shortInfo span{display:block;color:#e3e4e7;font-size:9px;margin-top:4px}.miniGrid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.mini{border:1px solid var(--line);border-radius:15px;background:#fff;padding:20px}.mini h3{font-size:14px;margin:0 0 7px}.mini p{font-size:11px;color:var(--muted);margin:0;line-height:1.6}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}.tag{background:#f5f6f8;border:1px solid #e6e8ec;padding:6px 8px;border-radius:7px;color:#5d6470;font-size:10px}
-.download{display:grid;grid-template-columns:1fr 1fr;gap:12px}.download .item{border:1px solid var(--line);background:#fff;border-radius:16px;padding:21px}.item h3{margin:0;font-size:14px}.item p{color:var(--muted);font-size:11px;line-height:1.6}
-
-.catalogInfo{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-bottom:14px;border:1px solid var(--line);border-radius:17px;background:#fff;overflow:hidden}.catalogInfo>div{padding:17px 16px;border-right:1px solid var(--line)}.catalogInfo>div:last-child{border-right:0}.catalogInfo span{display:block;color:#969ca5;font-size:8px;font-weight:900;letter-spacing:1.3px;margin-bottom:6px}.catalogInfo b{font-size:11px;color:var(--ink)}
-@media(max-width:850px){.catalogInfo{grid-template-columns:repeat(3,1fr)}.catalogInfo>div:nth-child(3){border-right:0}.catalogInfo>div:nth-child(-n+3){border-bottom:1px solid var(--line)}}@media(max-width:560px){.catalogInfo{grid-template-columns:1fr 1fr}.catalogInfo>div:nth-child(3){border-right:1px solid var(--line)}.catalogInfo>div:nth-child(4){border-right:0}.catalogInfo>div:nth-child(5),.catalogInfo>div:nth-child(6){border-bottom:0}}
-.changelog,.faq{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}.release{display:grid;grid-template-columns:130px 1fr auto;gap:20px;padding:22px;border-bottom:1px solid var(--line)}.release:last-child{border:0}.release strong{font-size:12px}.release small{display:block;color:#8a9099;margin-top:4px}.release h3{font-size:13px;margin:0 0 5px}.release p{font-size:11px;color:var(--muted);margin:0}.badge{align-self:start;color:#c40a13;background:#fff3f4;border:1px solid #f1d1d4;padding:5px 7px;border-radius:6px;font-size:9px;font-weight:900}
-details{padding:17px 18px;border-bottom:1px solid var(--line)}details:last-child{border:0}summary{cursor:pointer;font-size:12px;font-weight:800}details p{color:var(--muted);font-size:11px;line-height:1.6;margin:10px 0 0}
-.devSection{background:#fff}.devBox{display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px solid var(--line);border-radius:22px;padding:30px;background:linear-gradient(135deg,#fff,#fafafa);box-shadow:0 12px 45px rgba(20,25,35,.055)}.devIdentity{display:flex;align-items:center;gap:17px}.avatar{width:58px;height:58px;border-radius:50%;background:#15171b;color:#fff;display:grid;place-items:center;font-weight:900;font-size:17px}.devBox h3{margin:0;font-size:18px}.devBox p{margin:4px 0 0;color:var(--muted);font-size:11px}.socials{display:flex;gap:9px;flex-wrap:wrap}.social{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;padding:10px 13px;border-radius:10px;font-size:11px;font-weight:800}.social:hover{border-color:#cfd3d9;color:var(--red)}.icon{width:16px;height:16px;display:block}
-.cta{margin:20px 0 90px}.ctaBox{padding:45px;border:1px solid #e0e2e7;border-radius:24px;background:linear-gradient(135deg,#15171b,#2a2d33);display:flex;align-items:center;justify-content:space-between;gap:25px;color:#fff}.ctaBox p{color:#b8bdc6;font-size:12px}.ctaBox h2{font-size:36px;letter-spacing:-2px;margin:5px 0}.ctaBox .devline{font-size:10px;color:#9fa5ae;margin-top:18px}.ctaBox .btn{border-color:#fff}.ctaBox .ghost{color:#15171b}
-footer{border-top:1px solid var(--line);padding:38px 0 50px;color:#777e89;font-size:10px}.foot{display:flex;justify-content:space-between;gap:20px}.foot strong{color:#202328;font-size:13px}.footlinks{display:flex;gap:18px;flex-wrap:wrap}.footlinks a:hover{color:var(--red)}
-@media(max-width:850px){.hero,.experience,.split{grid-template-columns:1fr}.hero{padding-top:45px}.showcase{height:500px}.grid{grid-template-columns:1fr 1fr}.download{grid-template-columns:1fr}.head{display:block}.head p{margin-top:12px}.navlinks a:not(.navcta){display:none}.experience{gap:35px}.split{gap:35px}.short{max-width:285px;margin:auto}.devBox{display:block}.socials{margin-top:20px}}
-@media(max-width:560px){.wrap{padding:0 17px}.nav{height:66px}.hero{padding:35px 0 65px}.hero h1{font-size:55px;letter-spacing:-4px}.hero p{font-size:14px}.showcase{height:405px}.device{width:205px}.device.a{transform:translateX(-86px) rotate(-8deg) scale(.8)}.device.b{transform:translateX(86px) rotate(8deg) scale(.8)}.grid{grid-template-columns:1fr}.section{padding:65px 0}.head h2{font-size:32px}.miniGrid{grid-template-columns:1fr}.cta{margin-bottom:65px}.ctaBox{padding:30px 22px;display:block}.ctaBox h2{font-size:30px}.ctaBox .btn{margin-top:12px;width:100%}.release{grid-template-columns:1fr}.badge{display:inline-block;width:max-content}.foot{display:block}.footlinks{margin-top:15px}.devIdentity{align-items:flex-start}}
-
-/* ZyvoTube mobile-first responsive polish */
-html,body{width:100%;overflow-x:hidden}
-body{-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
-img{max-width:100%;height:auto}
-a,.btn,.navcta,.social{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.btn,.navcta,.social{min-height:44px}
-.showcase{width:100%;overflow:hidden}
-@media(max-width:560px){
-.wrap{width:100%;padding-left:16px;padding-right:16px}
-.nav{padding-left:16px;padding-right:16px}
-.brand{font-size:19px}.logo{width:38px;height:38px}
-.navcta{padding:10px 12px;font-size:11px;white-space:nowrap}
-.hero{min-height:auto;padding:28px 0 45px;gap:8px}
-.hero h1{font-size:clamp(48px,15vw,64px);line-height:.94;letter-spacing:-3.5px}
-.hero p{font-size:14px;line-height:1.65}
-.actions{margin-top:22px;gap:8px}
-.actions .btn{flex:1 1 150px;padding:12px 13px;font-size:11px}
-.showcase{height:390px;margin-top:5px}
-.device{width:min(58vw,220px);padding:6px;border-radius:26px}
-.device img{border-radius:21px}
-.device.a{transform:translateX(-26vw) rotate(-8deg) scale(.82)}
-.device.b{transform:translateX(26vw) rotate(8deg) scale(.82)}
-.device.c{transform:scale(.94)}
-.showcase:hover .device.a{transform:translateX(-27vw) rotate(-9deg) scale(.83)}
-.showcase:hover .device.b{transform:translateX(27vw) rotate(9deg) scale(.83)}
-.showcase:hover .device.c{transform:translateY(-4px) scale(.95)}
-.section{padding:58px 0}
-.head{margin-bottom:23px}.head h2{font-size:31px;letter-spacing:-1.8px}
-.head p{font-size:12px;line-height:1.65}
-.grid,.miniGrid{grid-template-columns:1fr;gap:10px}
-.card{min-height:0;padding:19px;border-radius:16px}
-.card h3{margin:19px 0 6px}
-.experience{gap:28px}.screen{padding:6px;border-radius:23px}
-.split{gap:27px}.short{width:min(78vw,285px);margin:auto}
-.mini{padding:17px}.download{gap:9px}.download .item{padding:18px}
-.catalogInfo{grid-template-columns:1fr 1fr}
-.catalogInfo>div{padding:14px 12px}.catalogInfo span{font-size:7px}.catalogInfo b{font-size:10px}
-.release{padding:18px;gap:12px}.devBox{padding:22px;border-radius:18px}
-.cta{margin:0 0 55px}.ctaBox{padding:27px 20px;border-radius:20px}
-.ctaBox h2{font-size:29px}.ctaBox .btn{width:100%;margin-top:8px}
-footer{padding:30px 0 40px}.foot{line-height:1.7}
+/* ZyvoTube mobile-first polish */
+html { overflow-x:hidden; }
+body { overflow-x:hidden; }
+* { -webkit-tap-highlight-color:transparent; }
+img { max-width:100%; height:auto; }
+.reveal { opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+.reveal.show { opacity:1; transform:none; }
+.phone { transition:transform .8s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease; }
+.phone:hover { box-shadow:0 30px 80px rgba(0,0,0,.16); }
+.btn, .navbtn, .store, .feature { transition:transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.btn:active, .navbtn:active { transform:scale(.97); }
+.feature:hover { transform:translateY(-5px); }
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation:none !important; transition:none !important; }
+  .reveal { opacity:1 !important; transform:none !important; }
 }
-@media(min-width:561px) and (max-width:850px){
-.wrap{padding-left:24px;padding-right:24px}.hero{grid-template-columns:1fr;gap:20px}
-.showcase{height:500px}.grid{grid-template-columns:1fr 1fr}
+@media(max-width:520px){
+  .nav { height:62px; padding:0 15px; }
+  .brand { gap:7px; font-size:20px; letter-spacing:-1px; }
+  .logo { width:35px; height:35px; border-radius:10px; }
+  .waves { width:21px; }
+  .navbtn { padding:9px 13px; font-size:12px; }
+  .hero { min-height:auto; padding:30px 16px 50px; }
+  .hero h1 { font-size:clamp(46px,15vw,61px); line-height:.94; letter-spacing:-3.5px; margin:15px 0 18px; }
+  .hero p { font-size:15px; line-height:1.55; }
+  .actions { margin-top:21px; gap:8px; }
+  .btn { padding:13px 17px; font-size:13px; }
+  .phones { height:350px; margin-top:22px; }
+  .phone { width:155px; padding:5px; border-radius:23px; }
+  .phone img { border-radius:18px; }
+  .phone.one { left:8%; transform:rotate(-6deg); }
+  .phone.two { right:8%; top:24px; transform:rotate(6deg); }
+  .section { padding:58px 16px; }
+  .section h2, .copy h2 { font-size:32px; letter-spacing:-1.8px; }
+  .head { margin-bottom:30px; }
+  .feature { padding:21px; border-radius:19px; }
+  .demo { gap:30px; }
+  .demo img { max-width:310px; border-radius:22px; }
+  .download { padding:25px 20px; border-radius:23px; gap:20px; }
+  .download h2 { font-size:28px; }
+  .store { min-width:0; width:100%; padding:14px 16px; }
+  .about-card { padding:22px; border-radius:21px; }
+  .poster { max-width:310px; border-radius:20px; }
+  .footer { padding:24px 16px; }
 }
-@media(orientation:landscape) and (max-height:560px){
-.hero{padding-top:25px;padding-bottom:35px}.showcase{height:390px}.section{padding:50px 0}
+@media(min-width:521px) and (max-width:820px){
+  .hero { min-height:auto; }
 }
 
+:root{--red:#e50920;--red2:#ff3045;--ink:#111;--muted:#6b6b6b;--bg:#fff;--soft:#f7f7f8;--line:#e9e9eb;--shadow:0 24px 70px rgba(0,0,0,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}a{text-decoration:none;color:inherit}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:0 24px;position:relative;z-index:10}.brand{display:flex;align-items:center;gap:11px;font-size:25px;font-weight:900;letter-spacing:-1.5px}.logo{width:43px;height:43px;border-radius:13px;background:linear-gradient(145deg,#ff2037,#d50018);display:grid;place-items:center;box-shadow:0 9px 25px #e5092028}.waves{width:26px}.waves i{height:3px;background:#fff;border-radius:99px;display:block;margin:4px 0;transform:skewY(-7deg)}.brand b{color:var(--red)}.links{display:flex;gap:28px;font-size:14px;font-weight:700}.links a:hover{color:var(--red)}.navbtn{background:var(--red);color:#fff;padding:12px 19px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 9px 24px #e5092028}
+.hero{min-height:680px;display:grid;grid-template-columns:1fr 1fr;align-items:center;max-width:1180px;margin:auto;padding:48px 24px 90px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:620px;height:620px;background:radial-gradient(circle,#ffe8eb,transparent 67%);right:-120px;top:-40px;z-index:-1}.eyebrow{color:var(--red);font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.coming{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;background:#fff0f1;color:var(--red);border-radius:999px;font-size:11px;font-weight:900}.hero h1{font-size:clamp(55px,7vw,94px);line-height:.92;letter-spacing:-6px;margin:18px 0 23px}.hero h1 span{color:var(--red)}.hero p{font-size:18px;line-height:1.65;color:var(--muted);max-width:520px}.actions{display:flex;gap:11px;margin-top:29px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 22px;border-radius:999px;font-weight:850;font-size:14px;cursor:pointer}.primary{background:var(--red);color:#fff;box-shadow:0 12px 30px #e5092033}.secondary{border:1px solid #ddd;background:#fff}.phones{position:relative;height:575px;display:flex;justify-content:center;align-items:center}.phone{position:absolute;width:270px;background:#101010;padding:8px;border-radius:35px;box-shadow:var(--shadow)}.phone img{width:100%;display:block;border-radius:28px}.phone.one{transform:rotate(-7deg);left:62px}.phone.two{transform:rotate(7deg);right:18px;top:34px}
+.section{padding:92px 24px}.soft{background:var(--soft)}.wrap{max-width:1080px;margin:auto}.head{text-align:center;max-width:680px;margin:0 auto 46px}.section h2{font-size:43px;letter-spacing:-2.5px;margin:0 0 13px}.head p,.copy p{color:var(--muted);line-height:1.65}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{background:#fff;border:1px solid var(--line);padding:27px;border-radius:23px;transition:.2s}.feature:hover{transform:translateY(-4px);box-shadow:0 15px 40px #0000000b}.icon{width:44px;height:44px;border-radius:14px;background:#fff0f1;color:var(--red);display:grid;place-items:center;font-size:21px;margin-bottom:17px}.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.demo img{width:100%;max-width:420px;display:block;margin:auto;border-radius:29px;box-shadow:var(--shadow)}.copy h2{font-size:45px;letter-spacing:-2.7px}.check{display:flex;gap:11px;margin:15px 0;color:#333;font-size:14px}.check strong{color:var(--red)}
+.download{background:#111;color:#fff;border-radius:30px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.download h2{font-size:39px;letter-spacing:-2px;margin:0 0 10px}.download p{color:#bdbdbd;line-height:1.6;margin:0;max-width:620px}.store{background:#fff;color:#111;padding:16px 21px;border-radius:15px;font-weight:850;min-width:180px;text-align:center}.store small{display:block;font-size:10px;font-weight:600;color:#777;margin-bottom:2px}.store span{font-size:15px}.disabled{opacity:.78;cursor:default}
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}.about-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:0 15px 45px #00000008}.dev{display:flex;align-items:center;gap:16px}.avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(145deg,#111,#444);color:#fff;display:grid;place-items:center;font-size:23px;font-weight:900}.dev h3{margin:0 0 4px}.dev p{margin:0;color:var(--muted);font-size:13px}.about-list{margin:25px 0 0;padding:0;list-style:none}.about-list li{padding:12px 0;border-top:1px solid var(--line);font-size:14px}.about-list b{float:right}.poster{width:100%;max-width:430px;margin:auto;display:block;border-radius:24px;box-shadow:var(--shadow)}
+.faq{max-width:760px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:19px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);line-height:1.6;margin:12px 0 0;font-size:14px}.footer{padding:30px 24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;max-width:1180px;margin:auto;color:#777;font-size:13px}.footer b{color:#111}
+@media(max-width:820px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:30px}.hero h1{font-size:61px;letter-spacing:-4px}.phones{height:475px;margin-top:25px}.phone{width:210px}.phone.one{left:34px}.phone.two{right:18px}.features{grid-template-columns:1fr}.demo,.about{grid-template-columns:1fr;gap:35px}.copy h2{font-size:37px}.download{grid-template-columns:1fr;padding:32px 25px}.download h2{font-size:31px}.footer{flex-direction:column;gap:10px}}
 </style>
 </head>
 <body>
-<header class="wrap nav">
-<a class="brand" href="#"><span class="logo"><span class="waves"><i></i><i></i><i></i></span></span><span><b style="color:var(--red)">Vibe</b>Tube</span></a>
-<nav class="navlinks"><a href="#experience">Experience</a><a href="#features">Features</a><a href="#downloads">Downloads</a><a href="#developer">Developer</a><a href="#faq">FAQ</a><a class="navcta" href="#download">Get ZyvoTube</a></nav>
-</header>
-
-<main class="wrap">
-<section class="hero">
-<div>
-<div class="pill"><b></b> ZyvoTube 1.0.1 · Latest release</div>
-<h1>Watch.<br><span>Vibe.</span> Your Way.</h1>
-<p>A clean, modern Android video experience for discovery, smooth playback, Shorts, powerful search and flexible downloads — designed around the things you actually use.</p>
-<div class="actions"><a class="btn primary" href="https://github.com/mrxfx/Vibetubez/releases" target="_blank" rel="noreferrer">↓ Download APK</a><a class="btn dark" href="#features">Explore features →</a></div>
-<div class="meta">Android · Version 1.0.1 · Developed by Rahul Haldar</div>
-</div>
-<div class="showcase"><div class="glow"></div><div class="device a"><img src="assets/Play.jpg" alt="ZyvoTube Watch screen" fetchpriority="high" decoding="async"></div><div class="device b"><img src="assets/Shorts.jpg" alt="ZyvoTube Shorts screen" loading="lazy" decoding="async"></div><div class="device c"><img src="assets/Home.jpg" alt="ZyvoTube Home screen" loading="lazy" decoding="async"></div></div>
-</section>
-
-<section class="section" id="features">
-<div class="head"><div><div class="eyebrow">Premium experience</div><h2>More than a video player.</h2></div><p>ZyvoTube combines discovery, playback, Shorts, downloads and personal controls in one polished Android experience.</p></div>
-<div class="grid">
-<article class="card"><span class="num">01</span><h3>Fast discovery</h3><p>Compact search across videos, Shorts and channels with useful channel, view and date metadata.</p></article>
-<article class="card"><span class="num">02</span><h3>Premium player</h3><p>Quality, captions, speed, fullscreen, sleep timer, background playback, PiP and advanced controls.</p></article>
-<article class="card"><span class="num">03</span><h3>Continuous Shorts</h3><p>Independent feed state, continuation pagination, duplicate protection and lightweight rolling preload.</p></article>
-<article class="card"><span class="num">04</span><h3>Flexible downloads</h3><p>Choose genuinely available video qualities or supported audio options with background progress.</p></article>
-<article class="card"><span class="num">05</span><h3>Deep personalization</h3><p>Playback, Shorts, downloads, appearance, search, notifications, storage and player preferences.</p></article>
-<article class="card"><span class="num">06</span><h3>Modern Android</h3><p>Built around Jetpack Compose, Media3, MVVM/Clean Architecture, Room, DataStore and background services.</p></article>
-</div>
-</section>
+<nav class="nav"><a class="brand" href="https://www.zyvotube.in/" aria-label="ZyvoTube official website"><span class="logo"><span class="waves"><i></i><i></i><i></i></span></span><span><b>Zyvo</b>Tube</span></a><div class="links"><a href="#demo">Demo</a><a href="#features">Features</a><a href="#download">Download</a><a href="#developer">Developer</a></div><a class="navbtn" href="#download">Get the App</a></nav>
+<main id="top">
+<section class="hero reveal"><div><span class="coming">● NOW AVAILABLE</span><div class="eyebrow" style="margin-top:21px">A new way to watch</div><h1>Watch.<br><span>Explore.</span><br>Zyvo.</h1><p>ZyvoTube is a modern video experience made for watching, discovering and saving the content you love — all in one place.</p><div class="actions"><a class="btn primary" href="#download">Download App</a><a class="btn secondary" href="#demo">View App Demo</a></div></div><div class="phones"><div class="phone one"><img src="assets/home-screen.jpg" alt="ZyvoTube home screen demo"></div><div class="phone two"><img src="assets/watch-screen.jpg" alt="ZyvoTube video player demo"></div></div></section>
+<section class="section reveal" id="demo"><div class="wrap"><div class="head"><div class="eyebrow">APP DEMO</div><h2>See ZyvoTube in action.</h2><p>Explore the current app experience before launch — from your home feed to the video player.</p></div><div class="demo"><img src="assets/home-screen.jpg" alt="ZyvoTube home app screen"><div class="copy"><div class="eyebrow">Home experience</div><h2>Find something worth watching.</h2><p>Continue playing, trending content, categories, personalized recommendations and quick access to the parts of ZyvoTube you use most.</p><div class="check"><strong>✓</strong><span>Clean mobile-first interface</span></div><div class="check"><strong>✓</strong><span>Music, Gaming, News, Movies and more</span></div><div class="check"><strong>✓</strong><span>Shorts and personalized discovery</span></div><a class="btn primary" href="#features">Explore Features</a></div></div></div></section>
+<section class="section soft"><div class="wrap"><div class="demo"><div class="copy"><div class="eyebrow">WATCH EXPERIENCE</div><h2>A player built around the video.</h2><p>Keep the important controls close: title, creator, actions, comments and related videos without unnecessary clutter.</p><div class="check"><strong>✓</strong><span>Like, Download, Ask and Share</span></div><div class="check"><strong>✓</strong><span>Comments and related videos</span></div><div class="check"><strong>✓</strong><span>Adaptive player experience</span></div></div><img src="assets/watch-screen.jpg" alt="ZyvoTube watch screen demo"></div></div></section>
+<section class="section reveal" id="features"><div class="wrap"><div class="head"><div class="eyebrow">WHAT'S INSIDE</div><h2>Everything you vibe with.</h2><p>Built around a simple idea: make watching feel effortless.</p></div><div class="features"><article class="feature"><div class="icon">▶</div><h3>Watch & Explore</h3><p>A clean home feed with continuing playback, trending content and recommendations.</p></article><article class="feature"><div class="icon">♪</div><h3>Music & More</h3><p>Move between music, gaming, news, movies and other content in one place.</p></article><article class="feature"><div class="icon">⌁</div><h3>Shorts</h3><p>A dedicated vertical feed for quick, swipe-friendly discovery.</p></article><article class="feature"><div class="icon">↓</div><h3>Download & Save</h3><p>Save supported content for offline viewing with a focused library.</p></article><article class="feature"><div class="icon">✦</div><h3>AI Ask</h3><p>Get helpful context and answers around supported video content.</p></article><article class="feature"><div class="icon">♡</div><h3>Your Library</h3><p>History, subscriptions, liked videos, playlists and downloads together.</p></article></div></div></section>
+<section class="section reveal" id="download"><div class="wrap"><div class="download"><div><div class="eyebrow" style="color:#ff5262">VIBETUBE APP</div><h2>Ready when you are.</h2><p>Get the latest ZyvoTube Android build and enjoy a clean, modern video experience on your phone.</p></div><a class="store" href="https://www.zyvotube.in/" aria-label="Get ZyvoTube"><small>ANDROID APP</small><span>Download ZyvoTube</span></a></div></div></section>
+<section class="section soft" id="developer"><div class="wrap about"><div class="copy"><div class="eyebrow">DEVELOPER</div><h2>Built with a simple goal.</h2><p>ZyvoTube is an independent Android project focused on creating a clean, modern and enjoyable video experience.</p><div class="about-card"><div class="dev"><div class="avatar">R</div><div><h3>Rahul</h3><p>ZyvoTube Developer</p></div></div><ul class="about-list"><li>Platform <b>Android</b></li><li>Project <b>ZyvoTube</b></li><li>Status <b>Available</b></li></ul></div></div><img class="poster" src="assets/poster.png" alt="ZyvoTube coming soon poster"></div></section>
+<section class="section reveal"><div class="wrap"><div class="head"><div class="eyebrow">QUICK INFO</div><h2>ZyvoTube, at a glance.</h2></div><div class="faq"><details open><summary>When will the app be available?</summary><p>ZyvoTube is currently under development. The website will be updated when a public Android build is ready.</p></details><details><summary>Is this the official ZyvoTube website?</summary><p>This is the project landing page for the ZyvoTube app and its development information.</p></details><details><summary>Where can I download it?</summary><p>Use the download button above to get the latest available ZyvoTube Android build.</p></details></div></div></section>
 </main>
+<footer class="footer"><span>© 2026 <b>ZyvoTube</b></span><span>Watch • Explore • Zyvo</span></footer>
 
-<section class="band" id="experience"><div class="wrap section">
-<div class="experience"><div class="screen"><img src="assets/Play.jpg" alt="ZyvoTube Watch experience" loading="lazy" decoding="async"></div>
-<div><div class="eyebrow">The experience</div><h2>A player that stays out of your way.</h2><p style="color:var(--muted);font-size:13px;line-height:1.7">Video first, useful controls close at hand. Watch, discover related content and move between content without unnecessary friction.</p>
-<div class="points"><div class="point"><b>01</b><div><h3>Quality that adapts</h3><p>Show resolutions based on streams genuinely available for the selected video.</p></div></div><div class="point"><b>02</b><div><h3>Keep watching</h3><p>Background playback, PiP and media controls support uninterrupted listening and viewing.</p></div></div><div class="point"><b>03</b><div><h3>Contextual discovery</h3><p>Related videos and contextual Shorts remain connected to the current watch session.</p></div></div></div>
-</div></div></div></section>
+<script>
+(() => {
+  const items = document.querySelectorAll('.reveal');
+  const show = el => el.classList.add('show');
 
-<main class="wrap">
-<section class="section">
-<div class="head"><div><div class="eyebrow">Shorts</div><h2>Made for the swipe.</h2></div><p>A dedicated vertical experience with direct Download and Watch Full actions, continuous loading and playback continuity.</p></div>
-<div class="split"><div class="short"><img src="assets/Shorts.jpg" alt="ZyvoTube Shorts screen" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0"><div class="shortTop"><span>‹</span><span>ZyvoTube</span><span>⌁</span></div><div class="rail"><i>♥</i><i>☷</i><i>↗</i><i>↓</i><i>•••</i></div><div class="shortInfo"><b>@ZyvoTube</b><span>Swipe · Download · Watch Full</span></div></div>
-<div class="miniGrid"><div class="mini"><h3>Continuous feed</h3><p>Fetch the next page before the queue runs low and avoid repeating canonical video IDs.</p><div class="tags"><span class="tag">Auto-next</span><span class="tag">Pagination</span><span class="tag">Preload</span></div></div><div class="mini"><h3>Direct controls</h3><p>Like, comments, share, download, save, Watch Full and more remain accessible.</p></div><div class="mini"><h3>Playback continuity</h3><p>Feed state and player state stay separate to avoid needless resets and rebuffering.</p></div><div class="mini"><h3>Fresh sessions</h3><p>Temporary Shorts preload state stays separate from persistent downloads and preferences.</p></div></div></div>
-</section>
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(show);
+    return;
+  }
 
-<section class="section" id="downloads">
-<div class="head"><div><div class="eyebrow">Downloads</div><h2>Save it your way.</h2></div><p>Quality and format are based on what is genuinely available rather than an artificial fixed limit.</p></div>
-<div class="download"><div class="item"><h3>Video quality</h3><p>Expose supported resolutions dynamically, including 2160p/4K or higher when actually available.</p><div class="tags"><span class="tag">2160p</span><span class="tag">1440p</span><span class="tag">1080p</span><span class="tag">720p</span><span class="tag">480p</span></div></div><div class="item"><h3>Audio options</h3><p>Use the real source format or a genuine conversion pipeline where supported — never fake MP3 by renaming another container.</p><div class="tags"><span class="tag">Best available</span><span class="tag">Audio only</span></div></div><div class="item"><h3>Background progress</h3><p>Active downloads can show title, thumbnail, progress and completion state through Android notifications.</p></div><div class="item"><h3>Device library</h3><p>Supported media can be saved through modern Android storage APIs for compatible gallery and music apps.</p></div></div>
-</section>
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        show(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-<section class="section" id="changelog">
-<div class="head"><div><div class="eyebrow">Changelog</div><h2>What’s new.</h2></div><p>Release notes for the ZyvoTube Android app.</p></div>
-<div class="catalogInfo"><div><span>VERSION</span><b>1.0.1</b></div><div><span>PLATFORM</span><b>Android</b></div><div><span>STATUS</span><b>Active development</b></div><div><span>DEVELOPER</span><b>Rahul Haldar</b></div><div><span>LICENSE</span><b>GPL-3.0</b></div><div><span>SOURCE</span><b>GitHub</b></div></div>
-<div class="changelog"><div class="release"><div><strong>v1.0.1</strong><small>Latest</small></div><div><h3>Experience & performance</h3><p>Player, Shorts, download workflow and interface improvements across the app.</p></div><span class="badge">CURRENT</span></div><div class="release"><div><strong>v1.0</strong><small>Initial release</small></div><div><h3>ZyvoTube begins</h3><p>Core Android video experience with Home, Watch, Shorts, Search and essential playback features.</p></div><span class="badge">RELEASE</span></div></div>
-</section>
+  items.forEach(el => observer.observe(el));
+})();
+</script>
 
-<section class="section devSection" id="developer">
-<div class="head"><div><div class="eyebrow">Developer</div><h2>Built by Rahul Haldar.</h2></div><p>Follow the project, inspect the source and stay connected with the developer.</p></div>
-<div class="devBox"><div class="devIdentity"><div class="avatar">RH</div><div><h3>Rahul Haldar</h3><p>Developer · ZyvoTube Android project</p></div></div>
-<div class="socials">
-<a class="social" href="https://github.com/mrxfx/Vibetubez" target="_blank" rel="noreferrer" aria-label="Visit GitHub">
-<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.96c.58.1.79-.25.79-.56v-2.15c-3.23.7-3.91-1.38-3.91-1.38-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.74 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19a10.9 10.9 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.79.11 3.08.74.81 1.19 1.85 1.19 3.12 0 4.46-2.72 5.45-5.3 5.74.42.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> GitHub ↗</a>
-<a class="social" href="https://www.instagram.com/mr.haldar__" target="_blank" rel="noreferrer" aria-label="Visit Instagram">
-<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg> Instagram ↗</a>
-</div></div>
-</section>
-
-<section class="section" id="faq">
-<div class="head"><div><div class="eyebrow">FAQ</div><h2>Questions, answered.</h2></div></div>
-<div class="faq"><details open><summary>What is ZyvoTube?</summary><p>ZyvoTube is a modern Android video client focused on discovery, playback, Shorts and supported downloads.</p></details><details><summary>Does ZyvoTube support Shorts?</summary><p>Yes. Shorts has a dedicated vertical feed with continuation and playback features.</p></details><details><summary>Can I play videos in the background?</summary><p>Background playback is supported where the current media and device allow it.</p></details><details><summary>Where can I get the APK?</summary><p>The latest release is published through the project's GitHub Releases page.</p></details></div>
-</section>
-
-<section class="cta" id="download"><div class="ctaBox"><div><div class="eyebrow">Get started</div><h2>Ready to vibe?</h2><p>Grab the latest ZyvoTube Android release from GitHub.</p><div class="devline">ZyvoTube · Version 1.0.1 · Developed by Rahul Haldar</div></div><div><a class="btn primary" href="https://github.com/mrxfx/Vibetubez/releases" target="_blank" rel="noreferrer">Download APK ↗</a><a class="btn ghost" href="https://www.instagram.com/mr.haldar__" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></section>
-</main>
-
-<footer><div class="wrap foot"><div><strong>ZyvoTube</strong><br>Watch. Vibe. Your Way.</div><div class="footlinks"><a href="#features">Features</a><a href="#downloads">Downloads</a><a href="#developer">Developer</a><a href="https://github.com/mrxfx/Vibetubez" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.instagram.com/mr.haldar__" target="_blank" rel="noreferrer">Instagram ↗</a></div></div></footer>
-</body>
-</html>
+</body></html>
