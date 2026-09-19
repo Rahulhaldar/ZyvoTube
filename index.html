@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <title>ZyvoTube — Watch. Explore. Vibe.</title>
 <meta name="description" content="ZyvoTube is a modern Android video experience for discovery, Shorts, smooth playback and supported downloads.">
@@ -28,6 +28,57 @@ details{padding:17px 18px;border-bottom:1px solid var(--line)}details:last-child
 footer{border-top:1px solid var(--line);padding:38px 0 50px;color:#777e89;font-size:10px}.foot{display:flex;justify-content:space-between;gap:20px}.foot strong{color:#202328;font-size:13px}.footlinks{display:flex;gap:18px;flex-wrap:wrap}.footlinks a:hover{color:var(--red)}
 @media(max-width:850px){.hero,.experience,.split{grid-template-columns:1fr}.hero{padding-top:45px}.showcase{height:500px}.grid{grid-template-columns:1fr 1fr}.download{grid-template-columns:1fr}.head{display:block}.head p{margin-top:12px}.navlinks a:not(.navcta){display:none}.experience{gap:35px}.split{gap:35px}.short{max-width:285px;margin:auto}.devBox{display:block}.socials{margin-top:20px}}
 @media(max-width:560px){.wrap{padding:0 17px}.nav{height:66px}.hero{padding:35px 0 65px}.hero h1{font-size:55px;letter-spacing:-4px}.hero p{font-size:14px}.showcase{height:405px}.device{width:205px}.device.a{transform:translateX(-86px) rotate(-8deg) scale(.8)}.device.b{transform:translateX(86px) rotate(8deg) scale(.8)}.grid{grid-template-columns:1fr}.section{padding:65px 0}.head h2{font-size:32px}.miniGrid{grid-template-columns:1fr}.cta{margin-bottom:65px}.ctaBox{padding:30px 22px;display:block}.ctaBox h2{font-size:30px}.ctaBox .btn{margin-top:12px;width:100%}.release{grid-template-columns:1fr}.badge{display:inline-block;width:max-content}.foot{display:block}.footlinks{margin-top:15px}.devIdentity{align-items:flex-start}}
+
+/* ZyvoTube mobile-first responsive polish */
+html,body{width:100%;overflow-x:hidden}
+body{-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+img{max-width:100%;height:auto}
+a,.btn,.navcta,.social{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.btn,.navcta,.social{min-height:44px}
+.showcase{width:100%;overflow:hidden}
+@media(max-width:560px){
+.wrap{width:100%;padding-left:16px;padding-right:16px}
+.nav{padding-left:16px;padding-right:16px}
+.brand{font-size:19px}.logo{width:38px;height:38px}
+.navcta{padding:10px 12px;font-size:11px;white-space:nowrap}
+.hero{min-height:auto;padding:28px 0 45px;gap:8px}
+.hero h1{font-size:clamp(48px,15vw,64px);line-height:.94;letter-spacing:-3.5px}
+.hero p{font-size:14px;line-height:1.65}
+.actions{margin-top:22px;gap:8px}
+.actions .btn{flex:1 1 150px;padding:12px 13px;font-size:11px}
+.showcase{height:390px;margin-top:5px}
+.device{width:min(58vw,220px);padding:6px;border-radius:26px}
+.device img{border-radius:21px}
+.device.a{transform:translateX(-26vw) rotate(-8deg) scale(.82)}
+.device.b{transform:translateX(26vw) rotate(8deg) scale(.82)}
+.device.c{transform:scale(.94)}
+.showcase:hover .device.a{transform:translateX(-27vw) rotate(-9deg) scale(.83)}
+.showcase:hover .device.b{transform:translateX(27vw) rotate(9deg) scale(.83)}
+.showcase:hover .device.c{transform:translateY(-4px) scale(.95)}
+.section{padding:58px 0}
+.head{margin-bottom:23px}.head h2{font-size:31px;letter-spacing:-1.8px}
+.head p{font-size:12px;line-height:1.65}
+.grid,.miniGrid{grid-template-columns:1fr;gap:10px}
+.card{min-height:0;padding:19px;border-radius:16px}
+.card h3{margin:19px 0 6px}
+.experience{gap:28px}.screen{padding:6px;border-radius:23px}
+.split{gap:27px}.short{width:min(78vw,285px);margin:auto}
+.mini{padding:17px}.download{gap:9px}.download .item{padding:18px}
+.catalogInfo{grid-template-columns:1fr 1fr}
+.catalogInfo>div{padding:14px 12px}.catalogInfo span{font-size:7px}.catalogInfo b{font-size:10px}
+.release{padding:18px;gap:12px}.devBox{padding:22px;border-radius:18px}
+.cta{margin:0 0 55px}.ctaBox{padding:27px 20px;border-radius:20px}
+.ctaBox h2{font-size:29px}.ctaBox .btn{width:100%;margin-top:8px}
+footer{padding:30px 0 40px}.foot{line-height:1.7}
+}
+@media(min-width:561px) and (max-width:850px){
+.wrap{padding-left:24px;padding-right:24px}.hero{grid-template-columns:1fr;gap:20px}
+.showcase{height:500px}.grid{grid-template-columns:1fr 1fr}
+}
+@media(orientation:landscape) and (max-height:560px){
+.hero{padding-top:25px;padding-bottom:35px}.showcase{height:390px}.section{padding:50px 0}
+}
+
 </style>
 </head>
 <body>
