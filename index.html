@@ -305,8 +305,20 @@ button,a{-webkit-tap-highlight-color:transparent}
   .phone.center{width:151px}
   .phone.back-left{left:1%;top:58px}
   .phone.back-right{right:1%;top:63px}
-  .actions{flex-direction:column}
-  .btn{width:100%}
+  .actions{
+  flex-direction:row;
+  flex-wrap:nowrap;
+  gap:8px;
+}
+
+.btn{
+  width:auto;
+  flex:1;
+  min-width:0;
+  padding:0 8px;
+  font-size:11px;
+  white-space:nowrap;
+}
 }
 </style>
 </head>
