@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://zyvotube.in/assets/Home.jpg" alt="ZyvoTube" width="260">
+<img src="https://zyvotube.in/assets/Banner.jpg" alt="ZyvoTube" width="260">
 
 # 🎬 ZyvoTube
 
