@@ -1,196 +1,647 @@
 <div align="center">
 
-<img src="fastlane/metadata/android/en-US/images/icon.png" alt="PlayTube Icon" width="120">
+<img src="https://zyvotube.in/assets/Home.jpg" alt="ZyvoTube" width="260">
 
-# PlayTube
+# 🎬 ZyvoTube
 
-### A fast, private, and feature-rich YouTube client for Android
+### Watch. Explore. Zyvo.
 
-**No ads · No tracking · No data collection**
-
-<img src="fastlane/metadata/android/en-US/images/PlaytubefeatureGraphic.png" alt="PlayTube Feature Graphic" width="100%">
-
-<br>
+**A lightweight Android video experience built around discovery, playback, Shorts and downloads.**
 
 <p>
-  <a href="https://github.com/arslandaim-hub/PlayTube/releases/latest">
-    <img src="https://img.shields.io/github/v/release/arslandaim-hub/PlayTube?style=flat-square&color=10b981" alt="Latest Release">
+  <a href="https://github.com/Rahulhaldar/ZyvoTube/releases/latest">
+    <img src="https://img.shields.io/github/v/release/Rahulhaldar/ZyvoTube?display_name=tag&style=for-the-badge&color=ed0716&label=LATEST%20RELEASE" alt="Latest Release">
   </a>
-  <a href="https://github.com/arslandaim-hub/PlayTube/stargazers">
-    <img src="https://img.shields.io/github/stars/arslandaim-hub/PlayTube?style=flat-square&color=fbbf24" alt="GitHub Stars">
-  </a>
-  <a href="https://github.com/arslandaim-hub/PlayTube/network/members">
-    <img src="https://img.shields.io/github/forks/arslandaim-hub/PlayTube?style=flat-square&color=fbbf24" alt="GitHub Forks">
-  </a>
-  <a href="https://github.com/arslandaim-hub/PlayTube/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/arslandaim-hub/PlayTube?style=flat-square&color=3b82f6" alt="License">
-  </a>
-  <img src="https://img.shields.io/badge/Android-API%2024%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android API 24+">
-  <img src="https://img.shields.io/badge/Kotlin-100%25-B125EA?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Android-API%2024%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
+  <img src="https://img.shields.io/badge/Kotlin-Android-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-UI-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose">
 </p>
 
 <p>
-  <img src="https://img.shields.io/github/downloads/arslandaim-hub/PlayTube/total?style=flat-square&color=3b82f6&logo=github" alt="Total Downloads">
+  <a href="https://zyvotube.in">🌐 Website</a>
+  ·
+  <a href="https://github.com/Rahulhaldar/ZyvoTube/releases">📦 Releases</a>
+  ·
+  <a href="https://github.com/Rahulhaldar/ZyvoTube/issues">🐛 Issues</a>
 </p>
+
+</div>
+
+---
+
+## 🧭 What is ZyvoTube?
+
+**ZyvoTube** is an independently developed Android video application focused on keeping the everyday video experience simple, fast and lightweight.
+
+The project is designed around a few core ideas:
+
+- 🎬 **Watch** without unnecessary clutter
+- 🔎 **Explore** content quickly
+- 📱 **Scroll** through Shorts
+- ⬇️ **Download** supported video and audio
+- 🎵 **Keep M4A audio** in a player-friendly format
+- 🔊 **Continue playback** in the background
+- 🖼️ **Use Picture-in-Picture** when multitasking
+- 🧹 **Keep storage clean** with the built-in cache cleaner
+
+> **ZyvoTube is built as a personal independent project by Rahul Haldar.**
+
+---
+
+# 🚀 ZyvoTube v1.0.0
+
+<div align="center">
+
+### The first public ZyvoTube release
+
+| Release Detail | Value |
+|---|---|
+| 📱 Version | **1.0.0** |
+| 🔢 Version Code | **1** |
+| 📦 Package | `com.zyvotube.rahul` |
+| 💾 APK Size | **~8.58 MB** |
+| 🏷️ Release | **v1.0.0** |
+| 📅 Status | **Latest** |
 
 <br>
 
-<a href="https://github.com/arslandaim-hub/PlayTube/releases/latest">
-  <img src="https://img.shields.io/badge/GET%20IT%20ON-GitHub-000000?style=for-the-badge&logo=github&logoColor=white" height="50" alt="Get it on GitHub">
+<a href="https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk">
+  <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20ZYVOTUBE%20v1.0.0-ed0716?style=for-the-badge&logo=android&logoColor=white" alt="Download ZyvoTube">
+</a>
+
+</div>
+
+### 🔐 Release Verification
+
+**SHA-256**
+
+```text
+6f7076e2a26e10935782101937d47589320e15eb949439eef55c3d504543c771
+```
+
+Use the SHA-256 value above to verify that a downloaded APK matches the published release.
+
+---
+
+# ✨ What You Can Do
+
+## 🎬 Watch
+
+ZyvoTube puts the player first.
+
+- Smooth video playback
+- Dedicated fullscreen experience
+- Playback controls
+- Seeking and duration controls
+- Captions support where available
+- Playback speed controls where supported
+- Related content
+- Watch history
+- Continue watching
+- Background playback
+- Picture-in-Picture
+
+---
+
+## 📱 Shorts
+
+A dedicated vertical video experience for quick discovery.
+
+- Vertical swipe-based feed
+- Automatic progression to the next Short
+- Short-form playback
+- Download support where available
+- Background playback support
+- Fast content switching
+- Session-level duplicate protection
+- Preloading for nearby content
+
+> ZyvoTube's Shorts experience is designed to feel quick without turning the whole app into a heavy client.
+
+---
+
+## 🔎 Search & Discovery
+
+Find content without digging through complicated menus.
+
+- Video search
+- Shorts discovery
+- Channel discovery
+- Search result filtering
+- Related content
+- Thumbnail loading
+- Metadata caching
+- Independent feed state
+- Pagination support
+
+---
+
+# ⬇️ Download System
+
+ZyvoTube includes a focused download experience for supported media.
+
+### 🎥 Video Downloads
+
+- Supported video downloads
+- Download progress
+- Success and failure states
+- Download notifications
+- File validation
+- Local device storage integration
+
+### 🎵 M4A Audio Downloads
+
+Audio is intentionally kept lightweight.
+
+- Direct **M4A** audio downloads
+- No FFmpeg dependency required for the current M4A pipeline
+- Player-friendly audio files
+- Music-player visibility on supported Android devices
+- Background playback support
+
+> **M4A is the current preferred audio format in ZyvoTube.**
+
+---
+
+# 🔊 Background Playback
+
+Continue listening while using other parts of your phone.
+
+- Media playback continues outside the main screen
+- System media controls
+- Notification playback controls
+- Resume playback position
+- Audio-focused playback
+
+---
+
+# 🖼️ Picture-in-Picture
+
+Watch while doing something else.
+
+ZyvoTube supports Android Picture-in-Picture for compatible playback flows, allowing the video to continue in a floating player while another app is being used.
+
+---
+
+# 🧹 Cache Cleaner
+
+ZyvoTube includes a dedicated cache-cleaning system.
+
+### What it manages
+
+- App cache
+- External app cache
+- Cache size detection
+- Manual cleaning
+- Automatic cleanup checks
+
+### Safety design
+
+The cleaner is intended to target cache locations only.
+
+Completed user downloads and important app files are not treated as disposable cache.
+
+---
+
+# 🎨 ZyvoTube Design
+
+The visual direction is intentionally different from a basic Android media app.
+
+### Brand
+
+**ZyvoTube**
+
+### Visual identity
+
+- Crimson / red accent
+- Clean dark UI
+- Strong typography
+- Rounded surfaces
+- Modern cards
+- Lightweight animations
+- Minimal visual noise
+- Video-first layouts
+
+### Navigation
+
+The app is organized around the main areas users actually need:
+
+**Home · Shorts · Subscriptions · Notifications · You**
+
+---
+
+# 📸 Screenshots
+
+<div align="center">
+
+### 🏠 Home
+
+<img src="https://zyvotube.in/assets/Home.jpg" alt="ZyvoTube Home" width="220">
+
+<br><br>
+
+### ▶️ Player
+
+<img src="https://zyvotube.in/assets/Play.jpg" alt="ZyvoTube Player" width="220">
+
+<br><br>
+
+### 📱 Shorts
+
+<img src="https://zyvotube.in/assets/Shorts.jpg" alt="ZyvoTube Shorts" width="220">
+
+</div>
+
+> If the screenshot URLs are moved in the website repository later, update these image paths in this README.
+
+---
+
+# 🧩 Technology Stack
+
+| Area | Technology |
+|---|---|
+| Language | Kotlin |
+| UI | Jetpack Compose |
+| Android UI | AndroidX |
+| Playback | AndroidX Media3 |
+| Networking | OkHttp / project networking layer |
+| Async | Kotlin Coroutines |
+| State | StateFlow |
+| Local storage | Android storage APIs |
+| Analytics | Firebase Analytics |
+| Crash reporting | Firebase Crashlytics |
+| Build | Gradle |
+| Optimization | R8 + Resource Shrinking |
+| Release | Signed Android APK |
+
+---
+
+# 🏗️ High-Level Architecture
+
+```text
+┌──────────────────────────────────────────────┐
+│                 ZyvoTube UI                  │
+│          Jetpack Compose / AndroidX          │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│             Screen State / ViewModel         │
+│               StateFlow / Coroutines         │
+└──────────────────────┬───────────────────────┘
+                       │
+                       ▼
+┌──────────────────────────────────────────────┐
+│             Application Services             │
+│ Search · Feed · Playback · Downloads         │
+└───────────────┬──────────────┬───────────────┘
+                │              │
+                ▼              ▼
+       ┌────────────────┐  ┌─────────────────┐
+       │ Media3 Player  │  │ Download Layer  │
+       │ Video / Audio  │  │ Video / M4A     │
+       └───────┬────────┘  └────────┬────────┘
+               │                    │
+               ▼                    ▼
+       ┌─────────────────────────────────────┐
+       │           Android Device            │
+       │ Storage · MediaSession · PiP · OS   │
+       └─────────────────────────────────────┘
+```
+
+---
+
+# ⚡ Performance & APK Size
+
+One of the project goals is keeping ZyvoTube lightweight.
+
+The current v1.0.0 release uses:
+
+- R8 code shrinking
+- Resource shrinking
+- Release-only optimization
+- No FFmpeg dependency in the current M4A pipeline
+- Focused native dependency footprint
+- Lightweight release packaging
+
+### Current release size
+
+**~8.58 MB**
+
+This is intentional.
+
+> The target for the public ZyvoTube release was approximately **8–9 MB**, rather than shipping an unnecessarily large APK.
+
+---
+
+# 🔐 Package & Release Identity
+
+The public ZyvoTube application identity is:
+
+```text
+Application ID:
+com.zyvotube.rahul
+
+Version:
+1.0.0
+
+Version Code:
+1
+```
+
+### Important for future updates
+
+Future ZyvoTube updates must keep:
+
+```text
+com.zyvotube.rahul
+```
+
+and must continue using the same release signing identity.
+
+Changing the application ID would create a different Android application rather than a normal update.
+
+---
+
+# 🛡️ Safety & Distribution
+
+ZyvoTube is distributed through the project's official website and GitHub Releases.
+
+### Official sources
+
+🌐 **Website**
+
+https://zyvotube.in
+
+📦 **GitHub Repository**
+
+https://github.com/Rahulhaldar/ZyvoTube
+
+🚀 **Latest Release**
+
+https://github.com/Rahulhaldar/ZyvoTube/releases/latest
+
+📥 **v1.0.0 APK**
+
+https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk
+
+### Android installation
+
+Android may scan APKs installed outside Google Play with Play Protect.
+
+**Keep Play Protect enabled.**
+
+If Android displays a warning, verify the APK source and SHA-256 before continuing.
+
+---
+
+# 📊 Telemetry & Stability
+
+ZyvoTube includes Firebase-based telemetry for project monitoring and stability.
+
+### App events
+
+The project tracks relevant events such as:
+
+- App opens
+- Video playback
+- Shorts viewing
+- Download started
+- Download completed
+- Download failed
+- Background playback
+
+### Crash reporting
+
+Firebase Crashlytics is used for crash and non-fatal issue reporting.
+
+The goal is to use these signals to identify real-world problems and improve future releases.
+
+---
+
+# 🧪 Release Testing Checklist
+
+Before considering a build ready for public distribution:
+
+### Installation
+
+- [ ] Fresh APK installation
+- [ ] Play Protect scan
+- [ ] App launches correctly
+- [ ] Correct package identity
+- [ ] Correct version and version code
+
+### Playback
+
+- [ ] Normal video playback
+- [ ] Seek
+- [ ] Fullscreen
+- [ ] Captions where available
+- [ ] Playback speed
+- [ ] Background playback
+- [ ] Picture-in-Picture
+
+### Shorts
+
+- [ ] Shorts feed loads
+- [ ] Swipe to next Short
+- [ ] No excessive duplicate items
+- [ ] Auto progression
+- [ ] Download flow
+
+### Downloads
+
+- [ ] Video download
+- [ ] M4A download
+- [ ] Download progress
+- [ ] Download completion
+- [ ] Failed download handling
+- [ ] Music Player visibility for M4A
+- [ ] Download notification
+
+### Storage
+
+- [ ] Cache size detection
+- [ ] Clean Now
+- [ ] Automatic cache cleanup
+- [ ] User downloads remain safe
+
+### Firebase
+
+- [ ] Analytics events
+- [ ] Crashlytics initialization
+- [ ] Non-fatal reporting
+
+---
+
+# 🗂️ Project Structure
+
+A simplified view of the application architecture:
+
+```text
+ZyvoTube/
+│
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/
+│   │       ├── res/
+│   │       └── AndroidManifest.xml
+│   │
+│   ├── build.gradle.kts
+│   └── google-services.json
+│
+├── gradle/
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+└── README.md
+```
+
+> The exact source tree can evolve as the project grows.
+
+---
+
+# 🛠️ Development
+
+### Requirements
+
+Recommended development environment:
+
+- Android Studio
+- JDK 17
+- Android SDK
+- Git
+- Gradle / Gradle Wrapper
+
+### Build
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Rahulhaldar/ZyvoTube.git
+cd ZyvoTube
+```
+
+Then open the project in Android Studio and allow Gradle to sync.
+
+Build a release using the project's configured Gradle setup.
+
+> Release signing credentials and private keys should never be committed to GitHub.
+
+---
+
+# 📦 Releases
+
+| Version | Status | APK |
+|---|---|---|
+| **v1.0.0** | 🟢 Latest | ~8.58 MB |
+
+See all releases:
+
+https://github.com/Rahulhaldar/ZyvoTube/releases
+
+---
+
+# 🗺️ Project Direction
+
+Future development may focus on:
+
+- ⚡ Faster startup
+- 🎬 Faster video resolution
+- 📱 Smoother Shorts transitions
+- ⬇️ Better download reliability
+- 🎵 Improved audio metadata
+- 🧹 Further storage improvements
+- 📊 Better stability monitoring
+- 🎨 Continued UI polish
+- 🔧 Bug fixes based on real-device testing
+
+The project will prioritize stability before adding unnecessary features.
+
+---
+
+# 🤝 Feedback & Bug Reports
+
+Found something broken?
+
+Please create a GitHub issue with:
+
+1. Device model
+2. Android version
+3. ZyvoTube version
+4. What you expected
+5. What actually happened
+6. Steps to reproduce
+7. Screenshot or screen recording when useful
+
+🐛 **Report an issue:**
+
+https://github.com/Rahulhaldar/ZyvoTube/issues
+
+---
+
+# ⭐ Support ZyvoTube
+
+If you find the project useful:
+
+- ⭐ Star the repository
+- 🐛 Report reproducible bugs
+- 💡 Share useful ideas
+- 🧪 Help test releases
+- 📢 Share the official website
+- 🔧 Contribute where appropriate
+
+Every useful report helps make the next release better.
+
+---
+
+# 👨‍💻 Developer
+
+<div align="center">
+
+<img src="https://github.com/Rahulhaldar.png" width="96" height="96" alt="Rahul Haldar">
+
+## Rahul Haldar
+
+**Creator & Developer of ZyvoTube**
+
+<a href="https://github.com/Rahulhaldar">
+  <img src="https://img.shields.io/badge/GitHub-RahulHaldar-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
 
 <br><br>
 
-<a href="https://f-droid.org/packages/com.arslandaim.playtube/">
-  <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="50" alt="Get it on F-Droid">
-</a>
+**Building ideas into real apps. 🚀**
 
-<br><br>
+</div>
 
-<a href="https://github.com/ImranR98/Obtainium">
-  <img src="https://img.shields.io/badge/Get%20Updates%20via-Obtainium-4CAF50?style=for-the-badge" height="50" alt="Get Updates via Obtainium">
-</a>
+---
+
+# ⚠️ Important Notice
+
+ZyvoTube is an independent Android project.
+
+- ZyvoTube is not an official Google or YouTube application.
+- YouTube and related trademarks belong to their respective owners.
+- Content availability depends on the underlying service and available sources.
+- Download availability may vary by content and source.
+- Users are responsible for using the application in accordance with applicable laws and service terms.
+
+---
+
+<div align="center">
+
+# ❤️ ZyvoTube
+
+### Watch. Explore. Zyvo.
+
+**Version 1.0.0 · Built by Rahul Haldar**
 
 <br>
 
-<sub>Use <b>Obtainium</b> to receive updates directly from PlayTube's GitHub releases.</sub>
-
-</div>
-
----
-
-## Features
-
-* **Fluid Glass UI:** A modern, dynamic, and smooth full-screen browsing experience.
-* **Background Playback:** Continue listening with full media controls.
-* **Picture-in-Picture:** Watch videos while using other apps.
-* **Comments and Replies:** Browse comments and view replies.
-* **Multi-language Subtitles:** Watch content with subtitle support.
-* **Incognito Mode:** Browse without affecting personalized recommendations.
-* **High-Quality Downloads:** Download supported content in high quality.
-* **Gesture Controls:** Control brightness, volume, and playback with gestures.
-* **Orientation Controls:** Easily switch between portrait and landscape modes.
-* **Subscription Management:** Subscribe to and manage channels without a Google account.
-* **Privacy First:** No ads, tracking, or data collection.
-
-### Personalized Recommendations
-
-PlayTube includes a lightweight recommendation system that learns from user activity to provide more relevant video suggestions.
-
-Recommendation learning can be paused, and learned data can be cleared at any time from the app settings.
-
----
-
-## Screenshots
-
-<div align="center">
-
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/homescreen.png" width="18%" alt="Home Screen">
-&nbsp;
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/playerscreen.png" width="18%" alt="Player Screen">
-&nbsp;
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/library.png" width="18%" alt="Library Screen">
-&nbsp;
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/subscriptions.png" width="18%" alt="Subscriptions Screen">
-&nbsp;
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/settings.png" width="18%" alt="Settings Screen">
-&nbsp;
-<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/searchscreen.png" width="18%" alt="Search Screen">
-
-</div>
-
----
-
-## Technology Stack
-
-| Category                 | Technology         | Description                                    |
-| ------------------------ | ------------------ | ---------------------------------------------- |
-| **Architecture**         | MVVM               | Model-View-ViewModel architecture              |
-|                          | Clean Architecture | Separation between Domain, Data, and UI layers |
-|                          | Repository Pattern | Centralized data access and management         |
-| **Kotlin and Reactive**  | Kotlin Coroutines  | Asynchronous and background operations         |
-|                          | StateFlow          | Reactive UI state management                   |
-| **UI**                   | Jetpack Compose    | Modern declarative Android UI                  |
-|                          | Material Design 3  | Modern components and dynamic theming          |
-|                          | Compose Animations | Smooth transitions and UI animations           |
-| **Storage**              | Room Database      | Local storage for user metadata                |
-|                          | Jetpack DataStore  | User preferences and application settings      |
-| **Media and Networking** | AndroidX Media3    | Video and audio playback                       |
-|                          | Coil 3             | Image loading and caching                      |
-|                          | NewPipeExtractor   | Stream and metadata extraction                 |
-|                          | OkHttp             | HTTP networking                                |
-| **Background and DI**    | Hilt (Dagger)      | Dependency injection                           |
-|                          | WorkManager        | Reliable background tasks and downloads        |
-| **Build Tools**          | KSP                | Kotlin Symbol Processing                       |
-|                          | Version Catalogs   | Centralized dependency and version management  |
-
----
-
-## Acknowledgements
-
-PlayTube would not have been possible without the work of the open-source community.
-Special thanks to:
-* NewPipe
-* NewPipe Extractor
-* LibreTube
-* PipePipe
-* Flow
----
-
-## Important Notice
-
-> [!WARNING]
-> Publishing this application on the Google Play Store may violate Google's policies and/or the platform's terms of service. Always review the applicable policies and terms before distributing the application.
-
----
-
-## License and Code Usage
-
-PlayTube is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
-
-You are free to:
-
-* Use the source code.
-* Study how the application works.
-* Modify the source code.
-* Fork the project.
-* Redistribute copies of the project.
-
-### If You Modify or Redistribute PlayTube
-
-When distributing a modified or derivative version of PlayTube, you must comply with the GPL-3.0 license.
-
-This includes:
-* Keeping GPL-covered code under the GPL-3.0 license.
-* Providing the corresponding source code when required by the license.
-* Preserving applicable copyright and license notices.
-* Making GPL-covered source code available to recipients under GPL-3.0.
-* Clearly documenting significant changes made to the original code.
-
-For the complete license terms, see the [LICENSE](LICENSE) file.
-
----
-
-## Support PlayTube
-
-If you enjoy using PlayTube and would like to support its continued development, consider becoming a patron.
-
-Your support helps with continued development, maintenance, bug fixes, and future improvements.
-
-<div align="center">
-
-<a href="https://patreon.com/ArslanDaim77">
-  <img src="https://img.shields.io/badge/Become%20a%20Patron-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white" alt="Become a Patron">
+<a href="https://github.com/Rahulhaldar/ZyvoTube/releases/latest">
+  <img src="https://img.shields.io/badge/GET%20ZYVOTUBE-ed0716?style=for-the-badge&logo=android&logoColor=white" alt="Get ZyvoTube">
 </a>
-
-</div>
-
----
-
-<div align="center">
-
-### If you enjoy PlayTube, consider giving the project a star
-
-It helps more people discover the project and supports its continued development.
 
 </div>
