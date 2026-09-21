@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://zyvotube.in/assets/Banner.png" alt="ZyvoTube" width="100">
+<img src="https://zyvotube.in/assets/Banner.png" alt="ZyvoTube Banner" width="100%">
 
 # 🎬 ZyvoTube
 
 ### Watch. Explore. Zyvo.
 
-**A lightweight Android video experience built around discovery, playback, Shorts and downloads.**
+**A lightweight, modern Android video experience built for watching, discovering, Shorts, smooth playback, and downloads.**
 
 <p>
   <a href="https://github.com/Rahulhaldar/ZyvoTube/releases/latest">
@@ -15,6 +15,7 @@
   <img src="https://img.shields.io/badge/Android-API%2024%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
   <img src="https://img.shields.io/badge/Kotlin-Android-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
   <img src="https://img.shields.io/badge/Jetpack%20Compose-UI-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose">
+  <img src="https://img.shields.io/badge/Media3-Playback-6C63FF?style=for-the-badge" alt="Media3">
 </p>
 
 <p>
@@ -22,8 +23,12 @@
   ·
   <a href="https://github.com/Rahulhaldar/ZyvoTube/releases">📦 Releases</a>
   ·
-  <a href="https://github.com/Rahulhaldar/ZyvoTube/issues">🐛 Issues</a>
+  <a href="https://github.com/Rahulhaldar/ZyvoTube/issues">🐛 Report an Issue</a>
 </p>
+
+<br>
+
+**Built with ❤️ by Rahul Haldar**
 
 </div>
 
