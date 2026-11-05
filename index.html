@@ -321,23 +321,23 @@ button,a{-webkit-tap-highlight-color:transparent}
     white-space:nowrap;
   }
 }
+
+.site-footer{border-top:1px solid var(--line);padding:48px 0 20px;background:#fff}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.3fr 1fr;gap:32px}.footer-grid>div{display:flex;flex-direction:column;align-items:flex-start;gap:11px}.footer-grid p{color:var(--muted);font-size:12px;line-height:1.7}.footer-grid>div>b{font-size:13px;margin-bottom:5px}.footer-grid a:not(.brand){font-size:12px;color:#737782}.footer-grid a:hover,.footer-bottom a:hover{color:var(--red)}.footer-bottom{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:#858a93;font-size:11px}.footer-bottom a{color:inherit}
+@media(max-width:820px){.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr 1fr;gap:25px 16px}}
 </style>
 </head>
 <body>
 
 <header class="nav container">
-  <a class="brand" href="#top" aria-label="ZyvoTube home">
+  <a class="brand" href="/" aria-label="ZyvoTube home">
     <span class="logo"><span class="logo-lines"><i></i><i></i><i></i></span></span>
     <span><b class="zyvo">Zyvo</b>Tube</span>
   </a>
   <nav class="nav-links" aria-label="Main navigation">
-    <a href="#demo">Experience</a>
-    <a href="#features">Features</a>
-    <a href="#download">Downloads</a>
-    <a href="#developer">Developer</a>
-    <a href="#faq">FAQ</a>
+    <a href="/about">About</a><a href="/features">Features</a><a href="/download">Download</a><a href="/support">Support</a><a href="/faq">FAQ</a>
   </nav>
-  <a class="nav-cta" href="#download" data-release-link>Get ZyvoTube</a>
+  <a class="nav-cta" href="/download">Get ZyvoTube</a>
 </header>
 
 <main id="top">
@@ -471,10 +471,12 @@ button,a{-webkit-tap-highlight-color:transparent}
 </section>
 </main>
 
-<footer class="footer container">
-  <span>© 2026 <b>ZyvoTube</b></span>
-  <span>Watch · Explore · Zyvo</span>
-</footer>
+<footer class="site-footer"><div class="container footer-grid">
+  <div><a class="brand" href="/"><span class="logo"><span class="logo-lines"><i></i><i></i><i></i></span></span><span><b class="zyvo">Zyvo</b>Tube</span></a><p>Watch. Explore. Zyvo.<br>An independent Android project by Rahul Haldar.</p></div>
+  <div><b>Explore</b><a href="/about">About</a><a href="/features">Features</a><a href="/download">Download</a><a href="/faq">FAQ</a></div>
+  <div><b>Information</b><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a><a href="/legal">Legal &amp; Licenses</a><a href="/storage-help">Data &amp; Storage Help</a></div>
+  <div><b>Help</b><a href="/support">Support</a><a href="https://github.com/Rahulhaldar/ZyvoTube/issues">Report an issue ↗</a><a href="https://github.com/Rahulhaldar/ZyvoTube">GitHub ↗</a></div>
+</div><div class="container footer-bottom">© 2026 <b>ZyvoTube</b> · Independent Android application · <a href="/legal">Open-source notices</a></div></footer>
 
 <script>
 const ZYVOTUBE_RELEASE_URL = "https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk";

@@ -650,3 +650,10 @@ ZyvoTube is an independent Android project.
 </a>
 
 </div>
+
+
+## Official website pages
+
+This repository also contains the static ZyvoTube website. The following routes are provided: `/`, `/about`, `/features`, `/download`, `/privacy`, `/terms`, `/support`, `/legal`, `/storage-help`, and `/faq`. Each route has an `index.html` file and can be hosted on static hosting that supports directory index files (for example GitHub Pages with custom domain or another static host). `sitemap.xml` and `robots.txt` are included.
+
+For static hosts that do not automatically serve directory index files, configure clean URL routing or redirects for the listed paths.
