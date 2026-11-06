@@ -1,8 +1,8 @@
 
 {
-  "latestVersionName": "1.0.2",
-  "latestVersionCode": 3,
-  "minimumSupportedVersionCode": 3,
+  "latestVersionName": "1.0.1",
+  "latestVersionCode": 1,
+  "minimumSupportedVersionCode": 1,
   "mandatory": true,
   "apkUrl": "https://github.com/Rahulhaldar/ZyvoTube/releases/latest",
   "sha256": "",
