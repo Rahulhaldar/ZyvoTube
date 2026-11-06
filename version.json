@@ -1,1 +1,22 @@
-x
+
+{
+  "latestVersionName": "1.0.2",
+  "latestVersionCode": 3,
+  "minimumSupportedVersionCode": 3,
+  "mandatory": true,
+  "apkUrl": "https://github.com/Rahulhaldar/ZyvoTube/releases/latest",
+  "sha256": "",
+  "releaseNotes": {
+    "title": "ZyvoTube v1.0.2",
+    "overview": "A new ZyvoTube experience with improved performance and stability.",
+    "highlights": [
+      "Smoother video playback",
+      "Improved Shorts experience",
+      "Download improvements",
+      "Background playback improvements",
+      "Performance and stability improvements"
+    ],
+    "improvements": [],
+    "bugFixes": []
+  }
+}
