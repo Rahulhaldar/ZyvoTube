@@ -1,0 +1,15 @@
+
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.zyvotube.rahul",
+      "sha256_cert_fingerprints": [
+        "04:01:E6:DB:57:55:05:BA:C3:9A:2E:6C:B7:86:8C:B6:AF:92:B3:D2:91:61:A4:75:9E:99:86:A2:26:54:8F:39"
+      ]
+    }
+  }
+]
