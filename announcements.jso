@@ -2,16 +2,16 @@
   "announcements": [
     {
       "id": "announcement-welcome-2026",
-      "title": "Welcome to ZyvoTube!",
-      "message": "Experience blazing-fast video and shorts playback with zero interruptions. Check out the latest release notes and features.",
+      "title": "Welcome to ZyvoTube v1.0.2!",
+      "message": "Welcome to ZyvoTube v1.0.2!",
       "type": "INFO",
-      "publishDate": "2026-11-06T00:00:00Z",
+      "publishDate": "2026-11-09T00:00:00Z",
       "expiryDate": "2027-12-31T23:59:59Z",
       "minVersionCode": 3,
       "maxVersionCode": 99999,
       "deepLink": "zyvotube://releases",
-      "actionText": "What's New",
-      "actionUrl": "https://github.com/Rahulhaldar/ZyvoTube/releases",
+      "actionText": "Get ZyvoTube",
+      "actionUrl": "https://play.google.com/store/apps/details?id=com.zyvotube.rahul",
       "isDismissible": true,
       "priority": 10
     }

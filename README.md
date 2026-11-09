@@ -53,38 +53,32 @@ The project is designed around a few core ideas:
 
 ---
 
-# 🚀 ZyvoTube v1.0.0
+# 🚀 ZyvoTube v1.0.2
 
 <div align="center">
 
-### The first public ZyvoTube release
+### Latest Google Play release
 
 | Release Detail | Value |
 |---|---|
-| 📱 Version | **1.0.0** |
-| 🔢 Version Code | **1** |
+| 📱 Version | **1.0.2** |
+| 🔢 Version Code | **Managed by Google Play** |
 | 📦 Package | `com.zyvotube.rahul` |
-| 💾 APK Size | **~8.58 MB** |
-| 🏷️ Release | **v1.0.0** |
-| 📅 Status | **Latest** |
+| 💾 Distribution | **Google Play** |
+| 🏷️ Release | **v1.0.2** |
+| 📅 Status | **Available on Google Play** |
 
 <br>
 
-<a href="https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk">
-  <img src="https://img.shields.io/badge/⬇%20DOWNLOAD%20ZYVOTUBE%20v1.0.0-ed0716?style=for-the-badge&logo=android&logoColor=white" alt="Download ZyvoTube">
-</a>
+<a href="https://play.google.com/store/apps/details?id=com.zyvotube.rahul"><img src="https://img.shields.io/badge/GET%20IT%20ON-Google%20Play-01875f?style=for-the-badge&logo=googleplay&logoColor=white" alt="Get it on Google Play"></a>
 
 </div>
 
-### 🔐 Release Verification
+### What's new
 
-**SHA-256**
+**Welcome to ZyvoTube v1.0.2!**
 
-```text
-6f7076e2a26e10935782101937d47589320e15eb949439eef55c3d504543c771
-```
-
-Use the SHA-256 value above to verify that a downloaded APK matches the published release.
+Install or update ZyvoTube through [Google Play](https://play.google.com/store/apps/details?id=com.zyvotube.rahul).
 
 ---
 
@@ -320,7 +314,7 @@ The app is organized around the main areas users actually need:
 
 One of the project goals is keeping ZyvoTube lightweight.
 
-The current v1.0.0 release uses:
+The current ZyvoTube release is distributed through Google Play.
 
 - R8 code shrinking
 - Resource shrinking
@@ -331,7 +325,7 @@ The current v1.0.0 release uses:
 
 ### Current release size
 
-**~8.58 MB**
+**Google Play distribution**
 
 This is intentional.
 
@@ -348,10 +342,10 @@ Application ID:
 com.zyvotube.rahul
 
 Version:
-1.0.0
+1.0.2
 
 Version Code:
-1
+Managed by Google Play
 ```
 
 ### Important for future updates
@@ -386,9 +380,9 @@ https://github.com/Rahulhaldar/ZyvoTube
 
 https://github.com/Rahulhaldar/ZyvoTube/releases/latest
 
-📥 **v1.0.0 APK**
+📲 **Google Play**
 
-https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk
+https://play.google.com/store/apps/details?id=com.zyvotube.rahul
 
 ### Android installation
 
@@ -540,7 +534,7 @@ Build a release using the project's configured Gradle setup.
 
 | Version | Status | APK |
 |---|---|---|
-| **v1.0.0** | 🟢 Latest | ~8.58 MB |
+| **v1.0.2** | 🟢 Available on Google Play | — |
 
 See all releases:
 
@@ -641,7 +635,7 @@ ZyvoTube is an independent Android project.
 
 ### Watch. Explore. Zyvo.
 
-**Version 1.0.0 · Built by Rahul Haldar**
+**Version 1.0.2 · Built by Rahul Haldar**
 
 <br>
 

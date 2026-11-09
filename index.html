@@ -337,26 +337,37 @@ button,a{-webkit-tap-highlight-color:transparent}
   <nav class="nav-links" aria-label="Main navigation">
     <a href="/about">About</a><a href="/features">Features</a><a href="/download">Download</a><a href="/support">Support</a><a href="/faq">FAQ</a>
   </nav>
-  <a class="nav-cta" href="/download">Get ZyvoTube</a>
+  <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.zyvotube.rahul" target="_blank" rel="noopener">Get ZyvoTube</a>
 </header>
 
 <main id="top">
 <section class="hero container">
   <div class="hero-content reveal">
-    <span class="badge"><span class="badge-dot"></span>ZyvoTube 1.0.0 · Latest release</span>
+    <span class="badge"><span class="badge-dot"></span>ZyvoTube 1.0.2 · Latest release</span>
     <h1>Watch.<br><span class="accent">Zyvo.</span> Your<br>Way.</h1>
     <p class="hero-copy">A clean, modern Android video experience for discovery, smooth playback, Shorts, powerful search and flexible downloads — designed around the things you actually use.</p>
     <div class="actions">
-      <a class="btn primary" href="#download" data-release-link>↓ Download APK</a>
+      <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zyvotube.rahul" target="_blank" rel="noopener">↓ Get it on Google Play</a>
       <a class="btn secondary" href="#features">Explore features →</a>
     </div>
-    <div class="meta">Android · Version 1.0.0 · Developed by ❤️ Rahul Haldar</div>
+    <div class="meta">Android · Version 1.0.2 · Available on Google Play · Developed by ❤️ Rahul Haldar</div>
   </div>
 
   <div class="hero-visual reveal">
     <div class="phone back-left float"><img src="assets/Play.jpg" alt="ZyvoTube player screen"></div>
     <div class="phone center"><img src="assets/Home.jpg" alt="ZyvoTube home screen"></div>
     <div class="phone back-right float"><img src="assets/Shorts.jpg" alt="ZyvoTube Shorts screen"></div>
+  </div>
+</section>
+
+<section class="section soft" id="whats-new">
+  <div class="container">
+    <div class="section-title reveal">
+      <div class="kicker">LATEST UPDATE · v1.0.2</div>
+      <h2>What's new</h2>
+      <p>Welcome to ZyvoTube v1.0.2!</p>
+      <p><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zyvotube.rahul" target="_blank" rel="noopener">Get the latest version on Google Play →</a></p>
+    </div>
   </div>
 </section>
 
@@ -422,10 +433,10 @@ button,a{-webkit-tap-highlight-color:transparent}
       <div>
         <div class="kicker" style="color:#ff5360">ZYVOTUBE APP</div>
         <h2>Ready when you are.</h2>
-        <p>Download the latest ZyvoTube Android release directly from the official GitHub Releases page.</p>
+        <p>Install ZyvoTube v1.0.2 directly from Google Play. Updates are delivered through the Play Store.</p>
       </div>
-      <a class="store" href="#download" data-release-link aria-label="Download ZyvoTube">
-        <small>ANDROID APP</small>Download Latest APK
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.zyvotube.rahul" target="_blank" rel="noopener" aria-label="Install ZyvoTube from Google Play">
+        <small>GOOGLE PLAY</small>Install ZyvoTube
       </a>
     </div>
   </div>
@@ -476,15 +487,9 @@ button,a{-webkit-tap-highlight-color:transparent}
   <div><b>Explore</b><a href="/about">About</a><a href="/features">Features</a><a href="/download">Download</a><a href="/faq">FAQ</a></div>
   <div><b>Information</b><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a><a href="/legal">Legal &amp; Licenses</a><a href="/storage-help">Data &amp; Storage Help</a></div>
   <div><b>Help</b><a href="/support">Support</a><a href="https://github.com/Rahulhaldar/ZyvoTube/issues">Report an issue ↗</a><a href="https://github.com/Rahulhaldar/ZyvoTube">GitHub ↗</a></div>
-</div><div class="container footer-bottom">© 2026 <b>ZyvoTube</b> · Independent Android application · <a href="/legal">Open-source notices</a></div></footer>
+</div><div class="container footer-bottom">© 2026 <b>ZyvoTube</b> · Independent Android application · <a href="/legal">Legal &amp; Licenses</a></div></footer>
 
 <script>
-const ZYVOTUBE_RELEASE_URL = "https://github.com/Rahulhaldar/ZyvoTube/releases/download/v1.0.0/ZyvoTube-1.0.0-release.apk";
-
-document.querySelectorAll('[data-release-link]').forEach(link => {
-  link.href = ZYVOTUBE_RELEASE_URL;
-});
-
 (() => {
   const items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
