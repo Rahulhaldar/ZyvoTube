@@ -1,15 +1,17 @@
-
 [
   {
     "relation": [
-      "delegate_permission/common.handle_all_urls"
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
     ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.zyvotube.rahul",
       "sha256_cert_fingerprints": [
         "04:01:E6:DB:57:55:05:BA:C3:9A:2E:6C:B7:86:8C:B6:AF:92:B3:D2:91:61:A4:75:9E:99:86:A2:26:54:8F:39",
-        "25:C2:CD:7A:4A:55:69:87:CD:E4:C7:AA:39:F0:DF:73:17:EB:CF:E3:B2:49:B4:5E:D8:1D:7F:2B:7B:68:39:90"
+        "25:C2:CD:7A:4A:55:69:87:CD:E4:C7:AA:39:F0:DF:73:17:EB:CF:E3:B2:49:B4:5E:D8:1D:7F:2B:7B:68:39:90",
+        "A0:FF:51:4D:B7:0B:EF:37:E2:C4:0C:31:C3:6D:E0:72:73:36:93:08:F1:58:44:82:24:AD:F1:97:B1:96:1C:55",
+        "67:6B:78:DD:B5:F9:ED:78:53:F1:A2:77:1C:E4:CD:BD:F6:AE:E5:44:53:96:7E:37:AE:DD:E0:96:E6:81:64:11"
       ]
     }
   }
